@@ -1,28 +1,32 @@
 @import './fonts';
 
-// bootstrap
-@import './../node_modules/bootstrap/scss/bootstrap-reboot.scss';
-@import './../node_modules/bootstrap/scss/bootstrap-grid.scss';
-@import './../node_modules/bootstrap/scss/bootstrap-utilities.scss';
-@import './../node_modules/bootstrap/scss/images';
+// fontawesome
+@import './../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+// ~ = alias pt node_modules
+@import '~@fortawesome/fontawesome-free/scss/solid';
 
-// font awsome
-@import './../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
-@import '~@fortawesome/fontawesome-free/scss/brands.scss';
-@import '~@fortawesome/fontawesome-free/scss/regular.scss';
-@import '~@fortawesome/fontawesome-free/scss/solid.scss';
-// ~ = alias pentru node modules
+// bootstrap
+@import './../node_modules/bootstrap/scss/bootstrap-reboot';
+@import './../node_modules/bootstrap/scss/bootstrap-grid';
+@import './../node_modules/bootstrap/scss/bootstrap-utilities';
+// @import './../node_modules/bootstrap/scss/images';
 
 @import 'variables';
-@import './shared/index';
 @import './reset';
+
+// site
+@import './shared/index';
+
+// homepage
 @import './homepage/index';
 
+// catalog
+@import './catalog/index';
 
 body {
   font-family: 'Roboto', 'sans-serif';
   color: $gray-primary;
   font-size: 16px;
 }
-
-// orice componenta noua se importa aici :D
